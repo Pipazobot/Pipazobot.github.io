@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>miersu.cl</title>
-    <style>
-      #grad {
-        height: 1400px;
-        background-color: blue;/* For browsers that do not support gradients */
-        background-image: linear-gradient(to right, #1c87c9, #8ebf42);
-      }
-	div {text-align: center;}  
-    </style>
-  </head>
-  <body>
-    <h1 style="text-align:center">Miresu.cl</h1>
- 
-	<div id="grad">
-		<p style="text-align: right"> Pagina web mantenida por Felipe Mercado López <p/>
-		<p style="text-align: right"> f.mercado.lopez96@gmail.com <p/>
-		<p style="text-align: left"> . <p/>
-		<h1 style="color:#F5F1EE "> Siempre buscamos Innovar </h1>
-		<p  style= "color:#F5F1EE"> Crear valor mediante el desarrollo de soluciones tecnologicas, es nuestra forma de diferenciarnos
-			y aportar al dersarrollo general de la empresa. En la imagen se muestra un escaner Lidar el cual permite obtener modelos 3D de un terreno, 
-			dicho escaner utiliza un sensor de distancia el cual se apunta en diferentes direcciones para obtener el modelo 3D con gran presición.
-			Este escaner se termino de construir en Enero de 2022.		
-		</p>		
-		<img src="instrumento_electronico.jpg" 
-		 width="615" 
-		 height="345" />
+<head>
+	<meta name="punto_de_vista" content="width=device-width, initial-scale=1">
+	<title> Tutorial web </title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<div class="heroe">
+		<nav>
+			<img src="img_menu.png" class="menu_img">
+			<img src="img_logo02.png" class="logo">
+			<ul>
+				<li><a href=""> Lo ultimo</a></li>
+				<li><a href=""> Moderno</a></li>
+				<li><a href=""> Contemporaneo</a></li>
+				<li><a href=""> Accesible</a></li>
+			</ul>
+			<button type="button" onclick="activar_boton()" id="boton"><span> 
+			</span></button>
+		</nav>
+		<div class="seccion_lampara">
+			<img src="lampara02.png" class="lampara">
+			<img src="luz01.png" class="luz" id="luz">
+		</div>
 		
-		<p style="text-align: left"> . <p/>
-		<p style="text-align: left"> . <p/>
-		<p style="text-align: left"> . <p/>
-		
-		<h1 style="color:#F5F1EE "> Mayor seguridad para los Trabajadores </h1>
-		<p  style= "color:#F5F1EE"> El principal problema de seguridad son los riesgos de derrumbe, adentro de una faena minera. Contar con un modelo 3d 
-			de los tuneles subterraneos puede ayudar a: organizar el trabajo a realizar, reconocer posibles riesgos, medir el factor de potencia 
-			o el avance de los explosivos. De esta forma se promueve la inclusión de tecnologias actuales en la mineria chilena, también se fomenta la mano de obra local
-		</p>	
-		
-		<img src="mina subterranea 3d.jpg" 
-		 width="600" 
-		 height="360" />
-		
-		
+		<div class="seccion_texto">
+			<h1> Lo último<br>en Front End </h1>
+			<p> Esta es la primera lampara de nuestra compañia
+			Vendemos lamparas de todas las categorias y precios, siguenos en nuetras
+			redes sociales: realizamos concursos e iluminamos tu vida.</p>
+			<a href=""> Revisa Nuestro Catalogo </a> 
+			<div class="control">
+				<p>04</p>
+				<div class="linea"><span> </span></div>
+				<p>05</p>
+			</div>
+		</div>
 	</div>
-	
-	
-  </body>
-</html>
+<script>
+	var boton = document.getElementById("boton");
+	var luz = document.getElementById("luz");
+	function activar_boton(){
+		boton.classList.toggle("activo");
+		luz.classList.toggle("on");
+	}
+</script>	
+</body>
+</html> 
