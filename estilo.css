@@ -1,0 +1,19 @@
+p{
+  color: black;
+}
+h1{
+  font-size:60px;
+  text-align: center;
+}
+html{
+  background: linear-gradient(to right,green, yellow);
+}
+img{
+  display: block;
+  margin:0 auto;
+}
+div{
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;    /* Centrado vertical */
+}
